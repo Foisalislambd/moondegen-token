@@ -12,6 +12,7 @@ A modern, neon-themed landing page for the MoonDegen ($MOON) meme token built on
 - **Roadmap**: Multi-phase roadmap with progress tracking
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Modern UI**: Neon-themed design with smooth animations and gradients
+- **WhatsApp Integration**: Floating WhatsApp button for easy contact
 
 ## 🛠️ Tech Stack
 
@@ -28,7 +29,7 @@ A modern, neon-themed landing page for the MoonDegen ($MOON) meme token built on
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Foisalislambd/moondegen-token.git
    cd moondegen-token
    ```
 
@@ -71,7 +72,8 @@ moondegen-token/
 │   ├── HowToBuy.tsx    # Purchase instructions
 │   ├── Roadmap.tsx     # Roadmap section
 │   ├── Stats.tsx       # Token statistics
-│   └── Tokenomics.tsx  # Tokenomics chart
+│   ├── Tokenomics.tsx  # Tokenomics chart
+│   └── WhatsAppButton.tsx # WhatsApp floating button
 ├── constants.ts        # App constants and data
 ├── types.ts           # TypeScript type definitions
 ├── App.tsx            # Main app component
@@ -110,6 +112,11 @@ The project uses Tailwind CSS with custom colors defined in `index.html`:
 ## ⚠️ Disclaimer
 
 This is a meme coin project for entertainment purposes only. Not financial advice. Always do your own research (DYOR) before investing in any cryptocurrency.
+
+## 🔗 Links
+
+- **GitHub Repository**: [https://github.com/Foisalislambd/moondegen-token](https://github.com/Foisalislambd/moondegen-token)
+- **Live Demo**: [moondegen-token.vercel.app](https://moondegen-token.vercel.app)
 
 ## 📄 License
 

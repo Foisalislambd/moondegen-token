@@ -43,20 +43,20 @@ export const HowToBuy: React.FC = () => {
           <p className="text-gray-400">Follow these easy steps to become a whale.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {steps.map((step, idx) => (
             <div key={idx} className="relative group">
-              <div className="bg-surface/50 backdrop-blur-sm p-8 rounded-3xl border border-white/10 h-full hover:bg-surface/80 transition-all duration-300">
-                <div className="absolute -top-4 -left-4 w-10 h-10 bg-neon-purple text-black font-black flex items-center justify-center rounded-full text-lg shadow-lg">
+              <div className="bg-surface/50 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-white/10 h-full hover:bg-surface/80 transition-all duration-300">
+                <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-8 h-8 sm:w-10 sm:h-10 bg-neon-purple text-black font-black flex items-center justify-center rounded-full text-base sm:text-lg shadow-lg">
                   {idx + 1}
                 </div>
                 
-                <div className={`mb-6 ${step.color} p-4 bg-white/5 rounded-2xl inline-block`}>
+                <div className={`mb-4 sm:mb-6 ${step.color} p-3 sm:p-4 bg-white/5 rounded-2xl inline-block`}>
                   {step.icon}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{step.title}</h3>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>

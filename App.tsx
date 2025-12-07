@@ -7,6 +7,7 @@ import { HowToBuy } from './components/HowToBuy';
 import { Tokenomics } from './components/Tokenomics';
 import { Roadmap } from './components/Roadmap';
 import { Footer } from './components/Footer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Roadmap />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

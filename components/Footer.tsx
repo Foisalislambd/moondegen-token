@@ -8,15 +8,15 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-black italic mb-8">{TICKER}</h2>
         
-        <div className="flex justify-center gap-8 mb-8">
-          <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
-            <Twitter className="w-6 h-6" />
+        <div className="flex justify-center gap-4 sm:gap-8 mb-6 sm:mb-8">
+          <a href="#" className="p-2 sm:p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
+            <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
           </a>
-          <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
-            <Send className="w-6 h-6" />
+          <a href="#" className="p-2 sm:p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
+            <Send className="w-5 h-5 sm:w-6 sm:h-6" />
           </a>
-          <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
-            <Github className="w-6 h-6" />
+          <a href="#" className="p-2 sm:p-3 bg-white/5 rounded-full hover:bg-neon-blue hover:text-black transition-all hover:scale-110">
+            <Github className="w-5 h-5 sm:w-6 sm:h-6" />
           </a>
         </div>
 

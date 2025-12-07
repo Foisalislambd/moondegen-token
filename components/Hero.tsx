@@ -27,12 +27,12 @@ export const Hero: React.FC = () => {
           </span>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-6 leading-tight">
-          THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-blue">ULTIMATE</span> <br />
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter mb-6 leading-tight px-2">
+          THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-blue">ULTIMATE</span> <br className="hidden sm:block" />
           DEGEN REVOLUTION
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mb-10 font-light">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 max-w-2xl mb-10 font-light px-4">
           {TICKER} is the first token that actually understands your need for speed. 
           No utility, no roadmap, just pure vibes and community power.
         </p>
@@ -46,8 +46,8 @@ export const Hero: React.FC = () => {
           </Button>
         </div>
 
-        <div className="mt-12 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 break-all max-w-full">
-            <code className="text-neon-blue font-mono text-sm sm:text-base">
+        <div className="mt-8 sm:mt-12 p-3 sm:p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 break-all max-w-full mx-4">
+            <code className="text-neon-blue font-mono text-xs sm:text-sm md:text-base">
                 CA: {CONTRACT_ADDRESS}
             </code>
         </div>

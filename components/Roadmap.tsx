@@ -13,31 +13,31 @@ export const Roadmap: React.FC = () => {
           <span className="text-neon-blue">ROAD</span>MAP TO MARS
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {ROADMAP.map((phase, idx) => (
             <div 
               key={idx} 
-              className={`relative p-8 rounded-3xl border ${
+              className={`relative p-6 sm:p-8 rounded-3xl border ${
                 phase.done ? 'border-neon-green/50 bg-neon-green/5' : 'border-white/10 bg-white/5'
               } hover:border-neon-purple/50 transition-colors duration-300`}
             >
-              <div className="absolute -top-4 left-8 bg-black px-4 py-1 rounded-full border border-white/20 text-sm font-bold tracking-widest uppercase">
+              <div className="absolute -top-3 sm:-top-4 left-6 sm:left-8 bg-black px-3 sm:px-4 py-1 rounded-full border border-white/20 text-xs sm:text-sm font-bold tracking-widest uppercase">
                 {phase.phase}
               </div>
               
-              <h3 className={`text-2xl font-bold mb-6 mt-2 ${phase.done ? 'text-neon-green' : 'text-white'}`}>
+              <h3 className={`text-xl sm:text-2xl font-bold mb-4 sm:mb-6 mt-2 ${phase.done ? 'text-neon-green' : 'text-white'}`}>
                 {phase.title}
               </h3>
 
-              <ul className="space-y-4">
+              <ul className="space-y-3 sm:space-y-4">
                 {phase.items.map((item, itemIdx) => (
-                  <li key={itemIdx} className="flex items-start gap-3">
+                  <li key={itemIdx} className="flex items-start gap-2 sm:gap-3">
                     {phase.done ? (
-                      <CheckCircle2 className="w-6 h-6 text-neon-green shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-neon-green shrink-0 mt-0.5" />
                     ) : (
-                      <Circle className="w-6 h-6 text-gray-600 shrink-0" />
+                      <Circle className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600 shrink-0 mt-0.5" />
                     )}
-                    <span className={phase.done ? 'text-gray-200 line-through' : 'text-gray-400'}>
+                    <span className={`text-sm sm:text-base ${phase.done ? 'text-gray-200 line-through' : 'text-gray-400'}`}>
                       {item}
                     </span>
                   </li>
